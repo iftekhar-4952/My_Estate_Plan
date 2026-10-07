@@ -1,2 +1,0 @@
-const SITE_CONFIG={supportEmail:"YOUR_SUPPORT_EMAIL@example.com"};
-document.addEventListener("DOMContentLoaded",()=>{document.querySelectorAll("[data-year]").forEach(e=>e.textContent=new Date().getFullYear());document.querySelectorAll("[data-support]").forEach(e=>{if(SITE_CONFIG.supportEmail!=="YOUR_SUPPORT_EMAIL@example.com")e.href=`mailto:${SITE_CONFIG.supportEmail}`});const b=document.querySelector(".menu"),n=document.querySelector(".nav nav");if(b&&n)b.addEventListener("click",()=>n.classList.toggle("open"));});
